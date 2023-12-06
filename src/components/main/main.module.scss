@@ -1,0 +1,113 @@
+@import "../../scss/variables";
+
+.container {
+  background-color: rgb(116, 112, 112);
+  color: white;
+  width: 600px;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: -3px 6px 12px 6px rgba(0, 0, 0, 0.7);
+  border: 5px solid rgb(116, 112, 112);
+  animation: contAn 3s ease-in-out infinite;
+
+  h1 {
+    color: red;
+    font-family: "Fontdiner Swanky", serif;
+    width: max-content;
+    padding: 0.5rem 1rem;
+    margin: auto;
+    animation: headerAn 3s ease-in-out infinite;
+    margin-bottom: 1rem;
+    border: 3px solid rgb(116, 112, 112);
+  }
+
+  .h3 {
+    color: rgb(205, 230, 67);
+  }
+
+  .buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    h2 {
+      width: 3rem;
+      height: 3rem;
+      color: red;
+      background-color: yellow;
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  button {
+    color: white;
+    background-color: red;
+    padding: 1rem 3rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    &:hover {
+      color: red;
+      background-color: white;
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+
+@keyframes headerAn {
+  0% {
+    border-radius: 1rem;
+    border-top: 3px solid yellow;
+  }
+  40% {
+    border-top: 3px solid yellow;
+    border-radius: 1rem;
+  }
+  50% {
+    border-right: 3px solid yellow;
+    border-radius: 1rem;
+  }
+  90% {
+    border-bottom: 3px solid yellow;
+    border-radius: 1rem;
+  }
+  100% {
+    border-left: 3px solid yellow;
+    border-radius: 1rem;
+    text-shadow: -3px 5px 5px yellow;
+  }
+}
+
+@keyframes contAn {
+  0% {
+    border-radius: 1rem;
+    border-top: 5px solid red;
+  }
+  40% {
+    border-top: 5px solid red;
+    border-radius: 1rem;
+  }
+  50% {
+    border-right: 5px solid red;
+    border-radius: 1rem;
+  }
+  90% {
+    border-bottom: 5px solid red;
+    border-radius: 1rem;
+  }
+  100% {
+    border-left: 5px solid red;
+    border-radius: 1rem;
+  }
+}
